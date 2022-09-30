@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* MAIN-NAV */
+
+.main-nav {
+  height: 70px;
+  background-color: #9f9f9f;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-nav > ul {
+  display: flex;
+  column-gap: 80px;
+  padding-right: 90px;
+}
+
+.main-nav > ul > li > a {
+  font-size: 20px;
+  color: #fff;
+  padding: 22px 30px;
+  border-radius: 10px;
+}
+
+.main-nav > ul > li > a:hover {
+  background-color: #fff;
+  color: #f1245f;
+}
+
+/* LOGO */
+
+.logo {
+  padding: 40px 0 40px 90px;
+}
+
+.logo > span {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* SECONDARY-NAV */
+
+.secondary-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0, 20%);
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.secondary-nav > ul {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.secondary-nav > ul > li > a {
+  font-size: 25px;
+  font-weight: 400;
+  color: #6a6a6a;
+}
+
+/* HOT-ARTICLES */
+
+.hot-articles {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 50px 0;
+}
+
+.hot-articles > article {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  border: 2px solid #b2b2b2;
+  padding: 6px;
+  column-gap: 15px;
+}
+
+.hot-articles > article > figure {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hot-articles > article > figure > img {
+  width: 100%;
+}
+
+.hot-articles > article > .article-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.hot-articles > article > .article-info > span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.hot-articles > article > .article-info > p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #9b9b9b;
+  line-height: 20px;
+}
+
+.bg-section {
+  margin-top: 70px;
+  display: flex;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.bg-section > figure {
+  width: 100%;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-position: 70% 20%;
+  background-origin: content-box;
+}
